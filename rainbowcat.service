@@ -1,0 +1,14 @@
+[Unit]
+Description=uWSGI instance to serve rainbowcat
+After=network.target
+
+[Service]
+User=pi
+Group=www-data
+WorkingDirectory=/home/pi/code/rainbowcat
+Environment="PATH=/home/pi/code/rainbowcat/venv/bin"
+ExecStart=/home/pi/code/rainbowcat/venv/binuwsgi --ini rainbowcat.ini
+
+[Install]
+WantedBy=multi-user.target
+

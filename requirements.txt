@@ -1,0 +1,11 @@
+Flask==1.0.2
+Flask-RESTful==0.3.6
+Jinja2==2.10
+MarkupSafe==1.0
+Werkzeug==0.14.1
+aniso8601==3.0.2
+click==6.7
+itsdangerous==0.24
+pytz==2018.5
+six==1.11.0
+uWSGI==2.0.17.1
